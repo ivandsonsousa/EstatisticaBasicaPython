@@ -17509,6 +17509,67 @@ e notas em Estatística.</p>
 </div>
 </div>
 </div>
+<div id="cell-id=79473517-e69c-4985-a6e6-ed2bda361c29" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Alguns-Resultados-Importantes-do-Cap%C3%ADtulo">Alguns Resultados Importantes do Cap&#237;tulo<a class="anchor-link" href="#Alguns-Resultados-Importantes-do-Cap%C3%ADtulo">&#182;</a></h3><hr />
+<h4 id="Axiomas-B%C3%A1sicos-da-Teoria-de-Probabilidades">Axiomas B&#225;sicos da Teoria de Probabilidades<a class="anchor-link" href="#Axiomas-B%C3%A1sicos-da-Teoria-de-Probabilidades">&#182;</a></h4><p>Seja $S$ o conjunto de todos os possíveis resultados de um experimento. $S$ é chamado de <strong>espaço amostral</strong> do experimento. Um <em>evento</em> é um subconjunto de $S$.</p>
+<p>Se $A_i$, com $i = 1, \ldots, n$, são eventos, então o conjunto $\bigcup_{i = 1}^n A_i$, chamado de <em>união</em> desses eventos, é formado por todos os resultados que aparecem em pelo menos um dos eventos $A_i, i = 1, \ \ldots n$. Similarmente, o conjunto $\bigcap_{i = 1}^n A_i$, às vezes escrito como $A_1 \cdots A_n$, é chamado de <em>interseção</em> dos eventos $A_i$ e é formado por todos os resultados que aparecem em todos os eventos $A_i, i = 1, \ \ldots n$.</p>
+<p>Para cada evento $A$, definimos $A^c$ como sendo correspondente a todos os resultados no espaço amostral que não estão em $A$. Chamamos $A^c$ de <em>complemento</em> do evento A. O evento $S^c$, que não possui resultados, é representado pelo símbolo $\varnothing$ e é chamado de conjunto <em>vazio</em>. Se $AB = \varnothing$, então dizemos que $A$ e $B$ são <em>mutuamente exclusivos</em>.</p>
+<p>Para cada ponto $A$ do espaço amostral $S$, supõe-se que o número $P(A)$, chamado de probabilidade de $A$, seja definido de forma que</p>
+<p>(i) $0 \leq P(A) \leq 1$</p>
+<p>(ii) $P(S) = 1$</p>
+<p>(iii) Para eventos $A_i$ mutuamente exclusivos, $i \geq 1$,</p>
+<p>$$ P \left( \bigcup_{i = 1}^\infty A_i \right) = \sum_{i = 1}^\infty P(A_i),$$</p>
+<p>em que $P(A)$ representa a probabilidade de que o resultado do experimento esteja em A.</p>
+<p>Outras duas identidades importantes são as seguintes:</p>
+<p>$$ P(A^c) = 1 - P(A) $$</p>
+<p>e</p>
+<p>$$ P(A \cup B) = P(A) + P(B) - P(AB), $$</p>
+<p>em que esta última pode ser generalizada para mais de dois eventos.</p>
+<p>Por fim, consideremos que o espaço amostral $S$ seja finito e que cada um dos pontos do conjunto tenha a mesma probabilidade de ocorrer. Sendo assim,</p>
+<p>$$ P(A) = \frac{n(A)}{n}, $$</p>
+<p>em que $n(A)$ é o número de pontos que caracterizam o evento $A$ e $n$ é o número de pontos que caracterizam o espaço amostral. A probabilidade $P(A)$, nesse caso, pode ser interpretada como uma frequência relativa de ocorrência em uma longa sequência de experimentos ou como uma medida de crença.</p>
+<h4 id="Defini%C3%A7%C3%A3o-de-Probabilidade-Condicional">Defini&#231;&#227;o de Probabilidade Condicional<a class="anchor-link" href="#Defini%C3%A7%C3%A3o-de-Probabilidade-Condicional">&#182;</a></h4><p>Para os eventos E e F, a probabilidade condicional de E dado que F ocorreu é dada por</p>
+<p>$$ P(E|F) = \frac{P(EF)}{P(F)}. $$</p>
+<p>A definição dada acima conduz à regra de multiplicação de probabilidades:</p>
+<p>$$ P(EF) = P(F)P(E|F),$$</p>
+<p>a qual pode ser generalizada para mais que dois eventos.</p>
+<h4 id="Identidade-para-eventos-mutuamente-exclusivos-em-um-espaco-amostral">Identidade para eventos mutuamente exclusivos em um espaco amostral<a class="anchor-link" href="#Identidade-para-eventos-mutuamente-exclusivos-em-um-espaco-amostral">&#182;</a></h4><p>Uma identiade valiosa é</p>
+<p>$$ P(E) = P(E|F)P(F) + P(E|F^c)P(F^c). $$</p>
+<p>A expressão acima pode ser generalizada para $n$ eventos mutuamente exclusivos que compõem um espaço amostral. Suponha que $F_1, F_2, \ldots, F_n$ sejam eventos mutuamente exclusivos tais que</p>
+<p>$$ \bigcup_{i = 1}^n F_i = S. $$</p>
+<p>Em outras palavras, exatamente um dos eventos $F_1, F_2, \ldots, F_n$ deve ocorrer. Podemos expressar um evento qualquer E como a interseção com cada um dos eventos $F_i$:</p>
+<p>$$ E = \bigcup_{i = 1}^n EF_i. $$</p>
+<p>Como os eventos $F_i$ são mutuamente exclusivos, podemos escrever</p>
+<p>$$ P(E) = \sum_{i = 1}^n P(EF_i) = \sum_{i = 1}^n P(E|F_i)P(F_i). $$</p>
+<p>A identidade acima nos conduz ao Teorema de Bayes (ou fórmula de Bayes):</p>
+<p>$$ P(F_j|E) = \frac{P(E|F_j) P(F_j)}{\sum_{i = 1}^n P(E|F_i)P(F_i)}. $$</p>
+<p>Se os eventos $F_i, i = 1, \ldots, n$ são hipóteses concorrentes, então a fórmula de Bayes mostra como calcular as probabilidades condicionais dessas hipóteses quando a evidência adicional $E$ se torna possível.</p>
+<h4 id="Eventos-Independentes">Eventos Independentes<a class="anchor-link" href="#Eventos-Independentes">&#182;</a></h4><p>Se $$ P(EF) = P(E)P(F), $$</p>
+<p>dizemos que os eventos $E$ e $F$ são independentes. A expressão acima também é equivalente a</p>
+<p>$$ P(E|F) = P(E) $$</p>
+<p>e</p>
+<p>$$ P(F|E) = P(E). $$</p>
+<p>Assim, os eventos $E$ e $F$ são independentes se o conhecimento da ocorrência de um deles não afetar a probabilidade do outro.</p>
+<p>Um outro fato interessante sobre eventos independentes é que, se $A$ e $B$ são independentes, então, os seguintes pares de eventos também serão independentes: $A$ e $B^c$, $A^c$ e $B$, bem como $A^c$ e $B^c$. Ou seja, se dois eventos são independentes, não só a ocorrência de um não tem influência sobre o outro, como também a não ocorrência de um não afeta a ocorrência do outro.</p>
+<h4 id="Independ%C3%AAncia-Condicional">Independ&#234;ncia Condicional<a class="anchor-link" href="#Independ%C3%AAncia-Condicional">&#182;</a></h4><p>Um importante conceito da teoria de probabilidades é o da independência condicional de eventos. Dizemos que os eventos $E_1$ e $E_2$ são <em>condicionalmente independentes</em> dado $F$ se, dado que $F$ ocorreu, a probabilidade condicional de $E_1$ ocorrer não seja afetada pela informação de que $E_2$ tenha ocorrido ou não. Mais formalmente, $E_1$ e $E_2$ são ditos condicionalmente independentes dado $F$ se</p>
+<p>$$ P(E_1|E_2F) = P(E_1|F) $$</p>
+<p>ou, equivalentemente,</p>
+<p>$$ P(E_1E_2|F) = P(E_1|F) P(E_2|F). $$</p>
+<h4 id="Usando-a-f%C3%B3rmula-de-Bayes-sequencialmente">Usando a f&#243;rmula de Bayes sequencialmente<a class="anchor-link" href="#Usando-a-f%C3%B3rmula-de-Bayes-sequencialmente">&#182;</a></h4><p>Suponha que existam $n$ hipóteses mutuamente exclusivas e exaustivamente possíveis, com probabilidades iniciais (às vezes chamadas de probabilidades <em>a priori</em>) $P(H_i$, com $\sum_{i = 1}^n P(H_i) = 1$. Agora, se a informação de que o evento $E$ ocorreu for recebida, então a probabilidade condicional de que $H_i$ seja a hipótese verdadeira (às vezes chamada de probabilidade <em>atualizada</em> ou <em>a posterior</em>) é, de acordo com a fórmula de Bayes:</p>
+<p>$$ P(H_i|E) = \frac{P(E|H_i) P(H_i)}{\sum_{j = 1}^n P(E|H_j)P(H_j)}. $$</p>
+<p>Suponha agora que saibamos de início que $E_1$ ocorreu e depois, que $E_2$ ocorreu. Nessa situação, a probabilidade a posterior de que a hipótese $H_i$ seja a verdadeira, sabendo que $E_1$ e $E_2$ ocorreram em sequência, é dada por</p>
+<p>$$ P(H_i|E_1E_2) = \frac{P(E_2|H_i) P(H_i|E_1)}{\sum_{j = 1}^n P(E_2|H_i) P(H_i|E_1)}, $$</p>
+<p>desde que, para cada $j = 1, 2, \ldots, n$, os eventos $E_1$ e $E_2$ sejam condicionalmente independentes dado $H_j$, conforme já definido acima.</p>
+
+</div>
+</div>
+</div>
+</div>
 <div id="cell-id=b897b15a-927b-4585-bdb9-7ede66a872e7" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17995,7 +18056,7 @@ valor de $k$ essa probabilidade é maior que 0,5? (Sugestão: seja A o evento �
 <h4 id="-O-Problema-de-Monty-Hall-"><font color="red"> O Problema de Monty Hall </font><a class="anchor-link" href="#-O-Problema-de-Monty-Hall-">&#182;</a></h4><p>Num programa de TV o objetivo é ganhar um carro como prêmio. O apresentador do programa mostra a você três portas, P1, P2 e P3: atrás de uma há um carro e, das outras, duas cabras. Ele pede a você para escolher uma porta, você escolhe P1, mas esta não é aberta. Então, ele abre uma das outras duas portas e mostra uma cabra (ele sabe o que há atrás de cada porta). Então ele pergunta se você quer mudar sua escolha de porta. O que você faria?</p>
 <hr />
 <p>Primeiramente, vamos resolver esse problema de uma maneira informal: inicialmente, a probabilidade de o prêmio estar em qualquer uma das portas é 1/3. Quando escolhemos a porta P1, por exemplo, a probabilidade de o prêmio estar em uma das portas que não escolhemos é 2/3. Monty Hall então abre uma das portas, mostra que não tem o prêmio e pergunta se queremos trocar. Como a probabilidade de o prêmio estar em uma das portas que não escolhemos é 2/3, é mais vantajoso trocar de porta. Isto ocorre porque, como Monty Hall sabe exatamente onde o prêmio está, ele naturalmente vai abrir uma porta sem prêmio, de modo que a probabilidade de o prêmio estar atrás da única porta que restou é, portanto, 2/3. O ponto chave aqui é que, inicialmente, as portas são equiprováveis. Depois que uma das portas é aberta por Monty, que sabe com certeza onde o prêmio está, a porta restante se torna mais provável de conter o prêmio. Por outro lado, caso Monty não soubesse onde está o prêmio e, por acaso, abrisse uma porta que não contêm o prêmio, a probabilidade de o prêmio estar na porta restante continuaria sendo 1/3.</p>
-<p>Vamos agora para a solução formal. Consideremos os seguintes eventos:</p>
+<p>Vamos agora para a solução formal, por meio do teorema de Bayes. Consideremos os seguintes eventos:</p>
 <p>$P1$: o prêmio está na porta 1</p>
 <p>$P2$: o prêmio está na porta 2</p>
 <p>$P3$: o prêmio está na porta 3</p>
@@ -18010,65 +18071,89 @@ valor de $k$ essa probabilidade é maior que 0,5? (Sugestão: seja A o evento �
 </div>
 </div>
 </div>
-<div id="cell-id=79473517-e69c-4985-a6e6-ed2bda361c29" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=d8ceec12-5f26-4875-bf45-ace19141b2a5" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Alguns-Resultados-Importantes-do-Cap%C3%ADtulo">Alguns Resultados Importantes do Cap&#237;tulo<a class="anchor-link" href="#Alguns-Resultados-Importantes-do-Cap%C3%ADtulo">&#182;</a></h3><hr />
-<h4 id="Axiomas-B%C3%A1sicos-da-Teoria-de-Probabilidades">Axiomas B&#225;sicos da Teoria de Probabilidades<a class="anchor-link" href="#Axiomas-B%C3%A1sicos-da-Teoria-de-Probabilidades">&#182;</a></h4><p>Seja $S$ o conjunto de todos os possíveis resultados de um experimento. $S$ é chamado de <strong>espaço amostral</strong> do experimento. Um <em>evento</em> é um subconjunto de $S$.</p>
-<p>Se $A_i$, com $i = 1, \ldots, n$, são eventos, então o conjunto $\bigcup_{i = 1}^n A_i$, chamado de <em>união</em> desses eventos, é formado por todos os resultados que aparecem em pelo menos um dos eventos $A_i, i = 1, \ \ldots n$. Similarmente, o conjunto $\bigcap_{i = 1}^n A_i$, às vezes escrito como $A_1 \cdots A_n$, é chamado de <em>interseção</em> dos eventos $A_i$ e é formado por todos os resultados que aparecem em todos os eventos $A_i, i = 1, \ \ldots n$.</p>
-<p>Para cada evento $A$, definimos $A^c$ como sendo correspondente a todos os resultados no espaço amostral que não estão em $A$. Chamamos $A^c$ de <em>complemento</em> do evento A. O evento $S^c$, que não possui resultados, é representado pelo símbolo $\varnothing$ e é chamado de conjunto <em>vazio</em>. Se $AB = \varnothing$, então dizemos que $A$ e $B$ são <em>mutuamente exclusivos</em>.</p>
-<p>Para cada ponto $A$ do espaço amostral $S$, supõe-se que o número $P(A)$, chamado de probabilidade de $A$, seja definido de forma que</p>
-<p>(i) $0 \leq P(A) \leq 1$</p>
-<p>(ii) $P(S) = 1$</p>
-<p>(iii) Para eventos $A_i$ mutuamente exclusivos, $i \geq 1$,</p>
-<p>$$ P \left( \bigcup_{i = 1}^\infty A_i \right) = \sum_{i = 1}^\infty P(A_i),$$</p>
-<p>em que $P(A)$ representa a probabilidade de que o resultado do experimento esteja em A.</p>
-<p>Outras duas identidades importantes são as seguintes:</p>
-<p>$$ P(A^c) = 1 - P(A) $$</p>
-<p>e</p>
-<p>$$ P(A \cup B) = P(A) + P(B) - P(AB), $$</p>
-<p>em que esta última pode ser generalizada para mais de dois eventos.</p>
-<p>Por fim, consideremos que o espaço amostral $S$ seja finito e que cada um dos pontos do conjunto tenha a mesma probabilidade de ocorrer. Sendo assim,</p>
-<p>$$ P(A) = \frac{n(A)}{n(B)}, $$</p>
-<p>em que $n(A)$ é o número de pontos que caracterizam o evento $A$ e $n(B)$ é o número de pontos que caracterizam o evento $B$. A probabilidade $P(A)$, nesse caso, pode ser interpretada como uma frequência relativa de ocorrência em uma longa sequência de experimentos ou como uma medida de crença.</p>
-<h4 id="Defini%C3%A7%C3%A3o-de-Probabilidade-Condicional">Defini&#231;&#227;o de Probabilidade Condicional<a class="anchor-link" href="#Defini%C3%A7%C3%A3o-de-Probabilidade-Condicional">&#182;</a></h4><p>Para os eventos E e F, a probabilidade condicional de E dado que F ocorreu é dada por</p>
-<p>$$ P(E|F) = \frac{P(EF)}{P(F)}. $$</p>
-<p>A definição dada acima conduz à regra de multiplicação de probabilidades:</p>
-<p>$$ P(EF) = P(F)P(E|F),$$</p>
-<p>a qual pode ser generalizada para mais que dois eventos.</p>
-<h4 id="Identidade-para-eventos-mutuamente-exclusivos-em-um-espaco-amostral">Identidade para eventos mutuamente exclusivos em um espaco amostral<a class="anchor-link" href="#Identidade-para-eventos-mutuamente-exclusivos-em-um-espaco-amostral">&#182;</a></h4><p>Uma identiade valiosa é</p>
-<p>$$ P(E) = P(E|F)P(F) + P(E|F^c)P(F^c). $$</p>
-<p>A expressão acima pode ser generalizada para $n$ eventos mutuamente exclusivos que compõem um espaço amostral. Suponha que $F_1, F_2, \ldots, F_n$ sejam eventos mutuamente exclusivos tais que</p>
-<p>$$ \bigcup_{i = 1}^n F_i = S. $$</p>
-<p>Em outras palavras, exatamente um dos eventos $F_1, F_2, \ldots, F_n$ deve ocorrer. Podemos expressar um evento qualquer E como a interseção com cada um dos eventos $F_i$:</p>
-<p>$$ E = \bigcup_{i = 1}^n EF_i. $$</p>
-<p>Em outras palavras, exatamente um dos eventos $F_1, F_2, \ldots, F_n$ deve ocorrer. Como os eventos $F_i$ são mutuamente exclusivos, podemos escrever</p>
-<p>$$ P(E) = \sum_{i = 1}^n P(EF_i) = \sum_{i = 1}^n P(E|F_i)P(F_i). $$</p>
-<p>A identidade acima nos conduz ao Teorema de Bayes (ou fórmula de Bayes):</p>
-<p>$$ P(F_j|E) = \frac{P(E|F_j) P(F_j)}{\sum_{i = 1}^n P(E|F_i)P(F_i)}. $$</p>
-<p>Se os eventos $F_i, i = 1, \ldots, n$ são hipóteses concorrentes, então a fórmula de Bayes mostra como calcular as probabilidades condicionais dessas hipóteses quando a evidência adicional $E$ se torna possível.</p>
-<h4 id="Eventos-Independentes">Eventos Independentes<a class="anchor-link" href="#Eventos-Independentes">&#182;</a></h4><p>Se $$ P(EF) = P(E)P(F), $$</p>
-<p>dizemos que os eventos $E$ e $F$ são independentes. A expressão acima também é equivalente a</p>
-<p>$$ P(E|F) = P(E) $$</p>
-<p>e</p>
-<p>$$ P(F|E) = P(E). $$</p>
-<p>Assim, os eventos $E$ e $F$ são independentes se o conhecimento da ocorrência de um deles não afetar a probabilidade do outro.</p>
-<h4 id="Independ%C3%AAncia-Condicional">Independ&#234;ncia Condicional<a class="anchor-link" href="#Independ%C3%AAncia-Condicional">&#182;</a></h4><p>Um importante conceito da teoria de probabilidades é o da independência condicional de eventos. Dizemos que os eventos $E_1$ e $E_2$ são <em>condicionalmente independentes</em> dado $F$ se, dado que $F$ ocorreu, a probabilidade condicional de $E_1$ ocorrer não seja afetada pela informação de que $E_2$ tenha ocorrido ou não. Mais formalmente, $E_1$ e $E_2$ são ditos condicionalmente independentes dado $F$ se</p>
-<p>$$ P(E_1|E_2F) = P(E_1|F) $$</p>
-<p>ou, equivalentemente,</p>
-<p>$$ P(E_1E_2|F) = P(E_1|F) P(E_2|F). $$</p>
-<h4 id="Usando-a-f%C3%B3rmula-de-Bayes-sequencialmente">Usando a f&#243;rmula de Bayes sequencialmente<a class="anchor-link" href="#Usando-a-f%C3%B3rmula-de-Bayes-sequencialmente">&#182;</a></h4><p>Suponha que existam $n$ hipóteses mutuamente exclusivas e exaustivamente possíveis, com probabilidades iniciais (às vezes chamadas de probabilidades <em>a priori</em>) $P(H_i$, com $\sum_{i = 1}^n P(H_i) = 1$. Agora, se a informação de que o evento $E$ ocorreu for recebida, então a probabilidade condicional de que $H_i$ seja a hipótese verdadeira (às vezes chamada de probabilidade <em>atualizada</em> ou <em>a posterior</em>) é, de acordo com a fórmula de Bayes:</p>
-<p>$$ P(H_i|E) = \frac{P(E|H_i) P(H_i)}{\sum_{j = 1}^n P(E|H_j)P(H_j)}. $$</p>
-<p>Suponha agora que saibamos de início que $E_1$ ocorreu e depois, que $E_2$ ocorreu. Nessa situação, a probabilidade a posterior de que a hipótese $H_i$ seja a verdadeira, sabendo que $E_1$ e $E_2$ ocorreram em sequência, é dada por</p>
-<p>$$ P(H_i|E_1E_2) = \frac{P(E_2|H_i) P(H_i|E_1)}{\sum_{j = 1}^n P(E_2|H_i) P(H_i|E_1)}, $$</p>
-<p>desde que, para cada $j = 1, 2, \ldots, n$, os eventos $E_1$ e $E_2$ sejam condicionalmente independentes dado $H_j$, conforme já definido acima.</p>
+<h4 id="-Exemplo-3l---ROSS,-Sheldon.-Probabilidade:-um-curso-moderno-com-aplica%C3%A7%C3%B5es.-Bookman-Editora,-2009.-"><font color="orange"> Exemplo 3l - ROSS, Sheldon. Probabilidade: um curso moderno com aplica&#231;&#245;es. Bookman Editora, 2009. </font><a class="anchor-link" href="#-Exemplo-3l---ROSS,-Sheldon.-Probabilidade:-um-curso-moderno-com-aplica%C3%A7%C3%B5es.-Bookman-Editora,-2009.-">&#182;</a></h4><p>Suponha que tenhamos 3 cartas idênticas, exceto que ambos os lados da primeira carta são vermelhos, ambos os lados da segunda carta são pretos e um dos lados da terceira carta é vermelho enquanto o outro lado é preto. As três cartas são misturadas no interior de um boné; uma carta é selecionada aleatoriamente e colocada no chão. Se o lado de cima da carta escolhida é vermelho, qual é a probabilidade de que o outro lado seja preto?</p>
+<hr />
+<p>Assim como fizemos no caso de Monty Hall, vamos resolver esse problema de duas maneiras: formal e informal. Vamos ver primeiro da maneira informal: temos 3 cartas, sendo 3 lados vermelhos e 3 pretos. Se escolhemos uma das cartas ao acaso e, ao colocá-la no chão, vemos que o lado de cima é vermelho, percebemos que existem 3 possibilidades - ou é um dos dois lados da carta vermelha, ou é o lado vermelho da carta vermelha e preta. Os três são <strong>igualmente prováveis</strong>. Dos 3 casos possíveis, apenas 1 favorece o resultado que queremos, que é aquele em que um dos lados da carta é vermelho e o outro é preto. Portanto, a resposta ao problema é 1/3.</p>
+<p>Agora, da maneira formal, usando o resultado do teorema de Bayes:</p>
+<p>Primeiro, dedinimos os eventos:</p>
+<p>$VV$: a carta escolhida é a que tem os dois lados vermelhos.</p>
+<p>$PP$: a carta escolhida é a que tem os dois lados pretos.</p>
+<p>$VP$: a carta escolhida é a que tem um lado vermelho e um lado preto</p>
+<p>$V$: o lado de cima da carta escolhida é vermelho.</p>
+<p>Queremos então encontrar $P(VP|V)$. Usando o resultado de Bayes, temos:</p>
+<p>$$ P(VP|V) = \frac{VP \cap V}{P(V)} = \frac{P(VP) P(V|VP)}{P(V|VV) P(VV) + P(V|VP)P(VP) + P(V|PP) P(PP)} = \frac{\frac{1}{3} \frac{1}{2}}{1 \times \frac{1}{3} + \frac{1}{2} \frac{1}{3} + 0 \times \frac{1}{3}} = \frac{1}{3}. $$</p>
+<p>Portanto, concluímos novamente que a resposta é 1/3. Contudo, alguns estudantes acham que a resposta é 1/2, uma vez que pensam incorretamente que, dado que um lado vermelho apareça na carta selecionada, haverá duas possibilidades <strong>igualmente prováveis</strong>: ou a carta é toda vermelha ou é vermelha e preta. Porém, o erro nesse raciocínio está em supor que essas duas possibilidades são igualmente prováveis, mas não são, já que, dado que o lado de cima da carta escolhida é vermelho, é mais provável que uma carta toda vermelha tenha sidoselecionada, já que essa carta possui dois lados vermelhos, ao passo que a carta vermelha e preta, naturalmente só possui um lado vermelho.</p>
 
 </div>
 </div>
 </div>
+</div>
+<div id="cell-id=2add525e-7f9e-4aad-9fc1-ad753938b257" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="-Exemplo-3n---ROSS,-Sheldon.-Probabilidade:-um-curso-moderno-com-aplica%C3%A7%C3%B5es.-Bookman-Editora,-2009.-"><font color="orange"> Exemplo 3n - ROSS, Sheldon. Probabilidade: um curso moderno com aplica&#231;&#245;es. Bookman Editora, 2009. </font><a class="anchor-link" href="#-Exemplo-3n---ROSS,-Sheldon.-Probabilidade:-um-curso-moderno-com-aplica%C3%A7%C3%B5es.-Bookman-Editora,-2009.-">&#182;</a></h4><p>Uma caixa contém 3 tipos de lanternas descartáveis. A probabilidade de que uma lanterna do tipo 1 funcione por mais de 100 horas é igual a 0,7, e as probabilidades referentes às lanternas de tipos 2 e 3 correspondem, respectivamente, a 0,4 e 0,3. Suponha que 20% das lanternas na caixa sejam do tipo 1, 30% sejam do tipo 2, e 50% sejam do tipo 3.</p>
+<p>(a) Qual a probabilidade de que uma lanterna aleatoriamente escolhida funcione mais de 100 horas?</p>
+<p>(b) Dado que uma lanterna tenha durado mais de 100 horas, qual é a probabilidade condicional de que ela seja uma lanterna do tipo $j$, com $j = 1, 2, 3$?</p>
+<hr />
+<p>(a) Sejam os seguintes eventos:</p>
+<p>$F$: a lanterna escolhida funciona por mais de 100 horas</p>
+<p>$E_j$: a lanterna escolhida é do tipo j.</p>
+<p>Para encontrar a probabilidade de uma lanterna escolhida ao acaso funcionar por mais de 100 horas, temos que considerar que ela pode ser de qualquer 1 dos 3 tipos:</p>
+<p>$$ P(F) = P(F|E_1) P(E_1) + P(F|E_2) P(E_2) + P(F|E_3) P(E_3) = 0,7 \times 0,2 + 0,4 \times 0,3 + 0,3 \times 0,5 \approx 0,41 = 41\%. $$</p>
+<p>Logo, uma lanterna escolhida ao acaso tem 41% de chance de funcionar.</p>
+<p>(b) Queremos encontrar $$ P(E_j|F). $$ Para isso, vamos usar o teorema de Bayes:</p>
+<p>$$ P(E_j|F) = \frac{P(E_j F)}{P(F)} = \frac{P(E_j) P(F|E_j)}{P(F|E_1) P(E_1) + P(F|E_2) P(E_2) + P(F|E_3) P(E_3)}. $$</p>
+<p>Logo, as probabilidades procuradas são:</p>
+<p>$$ P(E_1|F) = \frac{P(E_1 F)}{P(F)} = \frac{0,2 \times 0,7}{0,7 \times 0,2 + 0,4 \times 0,3 + 0,3 \times 0,5} \approx 0,34. $$</p>
+<p>$$ P(E_2|F) = \frac{P(E_2 F)}{P(F)} = \frac{0,3 \times 0,4}{0,7 \times 0,2 + 0,4 \times 0,3 + 0,3 \times 0,5} \approx 0,29. $$</p>
+<p>$$ P(E_3|F) = \frac{P(E_3 F)}{P(F)} = \frac{0,5 \times 0,3}{0,7 \times 0,2 + 0,4 \times 0,3 + 0,3 \times 0,5} \approx 0,37. $$</p>
+<p>Por fim, vemos que a informação de que a lanterna funcionou por mais de 100 horas aumenta a chance de que ela seja do tipo 1 de 20% para 34%, ao passo que, no caso das lanternas de tipos 2 e 3, essa informação diminui a probabilidade de que a lanterna sorteada seja do respectivo tipo.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div id="cell-id=af49e17e-b149-4b1a-bc1a-e68084c50eee" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="-Exemplo-4g---ROSS,-Sheldon.-Probabilidade:-um-curso-moderno-com-aplica%C3%A7%C3%B5es.-Bookman-Editora,-2009.-"><font color="orange"> Exemplo 4g - ROSS, Sheldon. Probabilidade: um curso moderno com aplica&#231;&#245;es. Bookman Editora, 2009. </font><a class="anchor-link" href="#-Exemplo-4g---ROSS,-Sheldon.-Probabilidade:-um-curso-moderno-com-aplica%C3%A7%C3%B5es.-Bookman-Editora,-2009.-">&#182;</a></h4><p>Um sistema formado por $n$ diferentes componentes é chamado de sistema paralelo se funcionar quando pelo menos um dos componentes estiver funcionando (ver figura abaixo). Em um sistema como esse, se o componente $i$, que é independente dos demais componentes funcionar com probabilidade $p_i, \ \ i = 1, \ldots, n$, qual é a probabilidade de o sistema funcionar?</p>
+<p><img src="data:image/png;base64,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" alt="image.png" /></p>
+<hr />
+<p>Para resolver esse problema, vamos usar duas propriedades bastante importantes em teoria de probabilidades: a primeira é que, dado o evento $A_i$: o componente $i$ funciona, a probabilidade de $A_i$ ocorrer é igual a 1 menos a probabilidade de seu evento complementar, $A^c$ (Ou seja, a probabilidade de o sistema funcionar é 1 menos a probabilidade de ele não funcionar). Além disso, vamos também considerar que, se $A$ e $B$ são dois eventos independentes, então $A^c$ e $B$, $A$ e $B^c$, $A^c$ e $B^c$ são todos pares de eventos independentes. Sendo assim, podemos escrever:</p>
+<p>$F:$ O sistema funciona.</p>
+<p>$$P(F) = 1 - P(F^c) = 1 - P(\cap A_i^c) = 1 - \prod_{i = 1}^n (1 - p_i). $$</p>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=1e9ce4cb-fee6-4e59-bb72-2b96de8b5464" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
